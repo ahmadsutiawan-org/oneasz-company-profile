@@ -1,102 +1,107 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="min-h-screen pt-10 pb-20 px-4 lg:px-8" x-data="{ loaded: false }"
+<div class="min-h-screen pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-white" x-data="{ loaded: false }"
     x-init="setTimeout(() => loaded = true, 100)">
-    <div class="max-w-[1600px] mx-auto space-y-12">
+    <div class="max-w-[1600px] mx-auto space-y-12 md:space-y-16">
 
-        <div class="flex flex-col md:flex-row justify-between items-end gap-6" x-show="loaded"
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6" x-show="loaded"
             x-transition:enter="transition ease-out duration-700" x-transition:enter-start="opacity-0 -translate-y-8">
             <div class="space-y-2">
-                <span class="text-blue-600 font-black uppercase tracking-[0.4em] text-xs">Technical Expertise</span>
-                <h2 class="text-7xl font-black italic uppercase leading-none tracking-tighter">Our 4 Pillars <br>Of
-                    <span class="text-blue-600">Solutions.</span></h2>
+                <span
+                    class="text-blue-600 font-black uppercase tracking-[0.3em] md:tracking-[0.4em] text-[10px] md:text-xs px-1">Technical
+                    Expertise</span>
+                <h2 class="text-5xl sm:text-6xl md:text-7xl font-black italic uppercase leading-[0.9] tracking-tighter">
+                    Our 4 Pillars <br>Of <span class="text-blue-600">Solutions.</span>
+                </h2>
             </div>
-            <p class="max-w-md text-slate-400 font-bold uppercase text-sm tracking-widest text-right">
+            <p class="max-w-md text-slate-400 font-bold uppercase text-xs md:text-sm tracking-widest md:text-right">
                 Eksekusi teknis yang presisi untuk efisiensi operasional dan skalabilitas masa depan.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
-            <div class="group bg-white border-2 border-slate-900 p-10 flex flex-col justify-between min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2"
+            <div class="group bg-white border-2 border-slate-900 p-8 md:p-10 flex flex-col justify-between min-h-[400px] md:min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
                 x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-200"
                 x-transition:enter-start="opacity-0 scale-95">
                 <div>
                     <div
-                        class="text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
+                        class="text-5xl md:text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
                         01</div>
-                    <h4 class="text-2xl font-black uppercase mt-6 group-hover:text-white">Custom Web & System
+                    <h4 class="text-xl md:text-2xl font-black uppercase mt-6 group-hover:text-white">Custom Web & System
                         Development</h4>
                 </div>
                 <div class="space-y-4">
                     <p class="text-slate-500 text-sm group-hover:text-slate-300">Pengembangan sistem manajemen, ERP, dan
                         Dashboard khusus yang skalabel dari level entri hingga korporat.</p>
-                    <div class="h-1 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
+                    <div class="h-1.5 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
                 </div>
             </div>
 
-            <div class="group bg-white border-2 border-slate-900 p-10 flex flex-col justify-between min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2"
+            <div class="group bg-white border-2 border-slate-900 p-8 md:p-10 flex flex-col justify-between min-h-[400px] md:min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
                 x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-300"
                 x-transition:enter-start="opacity-0 scale-95">
                 <div>
                     <div
-                        class="text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
+                        class="text-5xl md:text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
                         02</div>
-                    <h4 class="text-2xl font-black uppercase mt-6 group-hover:text-white">Infrastructure, Cloud & Data
-                        Center</h4>
+                    <h4 class="text-xl md:text-2xl font-black uppercase mt-6 group-hover:text-white">Infrastructure,
+                        Cloud & Data Center</h4>
                 </div>
                 <div class="space-y-4">
                     <p class="text-slate-500 text-sm group-hover:text-slate-300">Pembangunan jaringan dan manajemen
                         cloud (AWS/GCP/Azure) yang aman, tangguh, dan berkinerja tinggi.</p>
-                    <div class="h-1 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
+                    <div class="h-1.5 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
                 </div>
             </div>
 
-            <div class="group bg-white border-2 border-slate-900 p-10 flex flex-col justify-between min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2"
+            <div class="group bg-white border-2 border-slate-900 p-8 md:p-10 flex flex-col justify-between min-h-[400px] md:min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
                 x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-400"
                 x-transition:enter-start="opacity-0 scale-95">
                 <div>
                     <div
-                        class="text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
+                        class="text-5xl md:text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
                         03</div>
-                    <h4 class="text-2xl font-black uppercase mt-6 group-hover:text-white">IT Operational Management</h4>
+                    <h4 class="text-xl md:text-2xl font-black uppercase mt-6 group-hover:text-white">IT Operational
+                        Management</h4>
                 </div>
                 <div class="space-y-4">
                     <p class="text-slate-500 text-sm group-hover:text-slate-300">Manajemen strategis software & hardware
                         untuk memastikan efisiensi aset dan kelancaran operasional harian.</p>
-                    <div class="h-1 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
+                    <div class="h-1.5 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
                 </div>
             </div>
 
-            <div class="group bg-white border-2 border-slate-900 p-10 flex flex-col justify-between min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2"
+            <div class="group bg-white border-2 border-slate-900 p-8 md:p-10 flex flex-col justify-between min-h-[400px] md:min-h-[500px] hover:bg-slate-900 transition-all duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
                 x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-500"
                 x-transition:enter-start="opacity-0 scale-95">
                 <div>
                     <div
-                        class="text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
+                        class="text-5xl md:text-6xl font-black italic text-slate-100 group-hover:text-blue-600 transition-colors duration-500">
                         04</div>
-                    <h4 class="text-2xl font-black uppercase mt-6 group-hover:text-white">DevOps & System Reliability
-                    </h4>
+                    <h4 class="text-xl md:text-2xl font-black uppercase mt-6 group-hover:text-white">DevOps & System
+                        Reliability</h4>
                 </div>
                 <div class="space-y-4">
                     <p class="text-slate-500 text-sm group-hover:text-slate-300">Penerapan metodologi DevOps untuk
                         menjamin integritas data, integrasi berkelanjutan, dan keamanan siber.</p>
-                    <div class="h-1 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
+                    <div class="h-1.5 w-12 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-slate-900 p-16 border-l-[16px] border-blue-600 flex flex-col md:flex-row items-center justify-between gap-10"
+        <div class="bg-slate-900 p-8 md:p-16 border-l-8 md:border-l-[16px] border-blue-600 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10"
             x-show="loaded" x-transition:enter="transition ease-out duration-700 delay-700"
             x-transition:enter-start="opacity-0 translate-y-8">
             <div class="space-y-4">
-                <h3 class="text-4xl font-black text-white italic uppercase leading-none">Ready to Evolve?</h3>
-                <p class="text-slate-400 max-w-xl">Diskusikan kebutuhan infrastruktur digital Anda dan biarkan kami
-                    membangun sistem yang siap menghadapi masa depan.</p>
+                <h3 class="text-3xl md:text-4xl font-black text-white italic uppercase leading-tight">Ready to Evolve?
+                </h3>
+                <p class="text-slate-400 max-w-xl text-sm md:text-base">Diskusikan kebutuhan infrastruktur digital Anda
+                    dan biarkan kami membangun sistem yang siap menghadapi masa depan.</p>
             </div>
             <a href="{% url 'contact_page' %}"
-                class="px-12 py-5 bg-white text-slate-900 font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all duration-300 whitespace-nowrap">
+                class="w-full lg:w-auto text-center px-10 md:px-12 py-4 md:py-5 bg-white text-slate-900 font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all duration-300 whitespace-nowrap text-sm">
                 Start Consultation
             </a>
         </div>

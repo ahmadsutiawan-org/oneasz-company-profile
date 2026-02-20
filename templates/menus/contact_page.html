@@ -1,39 +1,42 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="min-h-screen pt-10 pb-20 px-4 lg:px-8 bg-slate-900" x-data="{ loaded: false }"
+<div class="min-h-screen pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-slate-900" x-data="{ loaded: false }"
     x-init="setTimeout(() => loaded = true, 100)">
-    <div class="max-w-[1600px] mx-auto grid lg:grid-cols-12 gap-8">
+    <div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
 
-        <div class="lg:col-span-5 space-y-8" x-show="loaded" x-transition:enter="transition ease-out duration-700"
-            x-transition:enter-start="opacity-0 -translate-x-10">
-            <div class="bg-white/5 border border-white/10 p-12 space-y-10">
+        <div class="lg:col-span-5 space-y-6 md:space-y-8" x-show="loaded"
+            x-transition:enter="transition ease-out duration-700" x-transition:enter-start="opacity-0 -translate-x-10">
+            <div class="bg-white/5 border border-white/10 p-8 md:p-12 space-y-8 md:space-y-10">
                 <div>
-                    <span class="text-blue-500 font-black uppercase tracking-[0.4em] text-xs">Direct Access</span>
-                    <h2 class="text-6xl font-black italic text-white uppercase mt-4">Get In <br>Touch.</h2>
+                    <span
+                        class="text-blue-500 font-black uppercase tracking-[0.3em] md:tracking-[0.4em] text-[10px] md:text-xs">Direct
+                        Access</span>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-black italic text-white uppercase mt-4">Get In
+                        <br>Touch.</h2>
                 </div>
 
-                <div class="space-y-6">
+                <div class="space-y-4 md:space-y-6">
                     <div
-                        class="group flex items-center gap-6 p-6 border border-white/5 hover:bg-white/5 transition-all cursor-pointer">
+                        class="group flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-4 sm:p-6 border border-white/5 hover:bg-white/5 transition-all cursor-pointer">
                         <div
-                            class="w-14 h-14 bg-blue-600 flex items-center justify-center text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">
+                            class="w-12 h-12 md:w-14 md:h-14 bg-blue-600 flex-shrink-0 flex items-center justify-center text-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <div>
+                        <div class="min-w-0 flex-1">
                             <p class="text-[10px] font-black text-blue-400 uppercase tracking-widest">Email Official</p>
-                            <p class="text-lg font-bold text-white">ahmadsutiawan.dev@gmail.com</p>
+                            <p class="text-sm sm:text-lg font-bold text-white break-all">ahmadsutiawan.dev@gmail.com</p>
                         </div>
                     </div>
 
                     <div
-                        class="group flex items-center gap-6 p-6 border border-white/5 hover:bg-white/5 transition-all cursor-pointer">
+                        class="group flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-4 sm:p-6 border border-white/5 hover:bg-white/5 transition-all cursor-pointer">
                         <div
-                            class="w-14 h-14 bg-slate-800 flex items-center justify-center text-white shadow-[4px_4px_0px_0px_rgba(37,99,235,0.5)]">
+                            class="w-12 h-12 md:w-14 md:h-14 bg-slate-800 flex-shrink-0 flex items-center justify-center text-white shadow-[4px_4px_0px_0px_rgba(37,99,235,0.5)]">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -41,14 +44,14 @@
                         </div>
                         <div>
                             <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">WhatsApp Line</p>
-                            <p class="text-lg font-bold text-white">0857-7274-7891</p>
+                            <p class="text-base sm:text-lg font-bold text-white uppercase">0857-7274-7891</p>
                         </div>
                     </div>
 
                     <div
-                        class="group flex items-center gap-6 p-6 border border-white/5 hover:bg-white/5 transition-all cursor-pointer">
+                        class="group flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-4 sm:p-6 border border-white/5 hover:bg-white/5 transition-all cursor-pointer">
                         <div
-                            class="w-14 h-14 bg-slate-800 flex items-center justify-center text-white shadow-[4px_4px_0px_0px_rgba(37,99,235,0.5)]">
+                            class="w-12 h-12 md:w-14 md:h-14 bg-slate-800 flex-shrink-0 flex items-center justify-center text-white shadow-[4px_4px_0px_0px_rgba(37,99,235,0.5)]">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
@@ -60,7 +63,8 @@
                         <div>
                             <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Operational HQ
                             </p>
-                            <p class="text-lg font-bold text-white uppercase">Kragilan, Serang - Banten</p>
+                            <p class="text-base sm:text-lg font-bold text-white uppercase leading-tight">Kragilan,
+                                Serang - Banten</p>
                         </div>
                     </div>
                 </div>
@@ -69,41 +73,50 @@
 
         <div class="lg:col-span-7" x-show="loaded" x-transition:enter="transition ease-out duration-700 delay-300"
             x-transition:enter-start="opacity-0 translate-y-10">
-            <div class="bg-white p-12 border-2 border-slate-900 shadow-[16px_16px_0px_0px_rgba(37,99,235,1)]">
-                <form action="#" class="space-y-8">
-                    <div class="grid md:grid-cols-2 gap-8">
+            <div
+                class="bg-white p-6 sm:p-8 md:p-12 border-2 border-slate-900 shadow-[8px_8px_0px_0px_rgba(37,99,235,1)] md:shadow-[16px_16px_0px_0px_rgba(37,99,235,1)]">
+                <form action="#" class="space-y-6 md:space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                         <div class="space-y-2">
                             <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Full
                                 Name</label>
                             <input type="text" placeholder="John Doe"
-                                class="w-full bg-slate-50 border-2 border-slate-200 p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold">
+                                class="w-full bg-slate-50 border-2 border-slate-200 p-3 sm:p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold text-sm">
                         </div>
                         <div class="space-y-2">
                             <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Email
                                 Address</label>
                             <input type="email" placeholder="john@company.com"
-                                class="w-full bg-slate-50 border-2 border-slate-200 p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold">
+                                class="w-full bg-slate-50 border-2 border-slate-200 p-3 sm:p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold text-sm">
                         </div>
                     </div>
                     <div class="space-y-2">
                         <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Subject
                             Solution</label>
-                        <select
-                            class="w-full bg-slate-50 border-2 border-slate-200 p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold appearance-none">
-                            <option>Custom Web Development</option>
-                            <option>Infrastructure & Cloud</option>
-                            <option>IT Operational Management</option>
-                            <option>DevOps & Reliability</option>
-                        </select>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-slate-50 border-2 border-slate-200 p-3 sm:p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold appearance-none text-sm">
+                                <option>Custom Web Development</option>
+                                <option>Infrastructure & Cloud</option>
+                                <option>IT Operational Management</option>
+                                <option>DevOps & Reliability</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 9l-7 7-7-7" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                     <div class="space-y-2">
                         <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Project
                             Detail</label>
-                        <textarea rows="5" placeholder="Tell us about your digital complexity..."
-                            class="w-full bg-slate-50 border-2 border-slate-200 p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold"></textarea>
+                        <textarea rows="4" placeholder="Tell us about your digital complexity..."
+                            class="w-full bg-slate-50 border-2 border-slate-200 p-3 sm:p-4 focus:border-blue-600 focus:bg-white outline-none transition-all font-bold text-sm"></textarea>
                     </div>
                     <button
-                        class="w-full py-5 bg-slate-900 text-white font-black uppercase tracking-[0.3em] hover:bg-blue-600 transition-all active:scale-[0.98]">
+                        class="w-full py-4 md:py-5 bg-slate-900 text-white font-black uppercase tracking-[0.2em] md:tracking-[0.3em] hover:bg-blue-600 transition-all active:scale-[0.98] text-xs sm:text-sm">
                         Initialize Consultation
                     </button>
                 </form>

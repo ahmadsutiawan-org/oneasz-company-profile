@@ -1,44 +1,49 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="min-h-screen pt-10 pb-20 px-4 lg:px-8 bg-white" x-data="{ loaded: false }"
+<div class="min-h-screen pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-white" x-data="{ loaded: false }"
     x-init="setTimeout(() => loaded = true, 100)">
     <div class="max-w-[1600px] mx-auto space-y-12">
 
-        <div class="flex flex-col md:flex-row justify-between items-end gap-6 border-b-4 border-slate-900 pb-12"
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 border-b-4 border-slate-900 pb-12"
             x-show="loaded" x-transition:enter="transition ease-out duration-700"
             x-transition:enter-start="opacity-0 -translate-y-8">
             <div class="space-y-4">
-                <span class="text-blue-600 font-black uppercase tracking-[0.5em] text-xs">Strategic Portfolio</span>
-                <h2 class="text-7xl font-black italic uppercase leading-none tracking-tighter text-slate-900">Proven
-                    <br>Track <span class="text-blue-600">Records.</span>
+                <span
+                    class="text-blue-600 font-black uppercase tracking-[0.4em] md:tracking-[0.5em] text-[10px] md:text-xs">Strategic
+                    Portfolio</span>
+                <h2
+                    class="text-5xl sm:text-6xl md:text-7xl font-black italic uppercase leading-[0.9] tracking-tighter text-slate-900">
+                    Proven <br>Track <span class="text-blue-600">Records.</span>
                 </h2>
             </div>
             <div
-                class="bg-slate-900 text-white p-6 max-w-sm border-2 border-slate-900 shadow-[8px_8px_0px_0px_rgba(37,99,235,1)]">
-                <p class="text-[10px] font-bold uppercase tracking-widest leading-relaxed">
+                class="bg-slate-900 text-white p-6 max-w-sm border-2 border-slate-900 shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] md:shadow-[8px_8px_0px_0px_rgba(37,99,235,1)]">
+                <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest leading-relaxed">
                     ONEASZ mengimplementasikan sistem kritikal manufaktur dengan reliabilitas tingkat tinggi.
                 </p>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
 
-            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[200ms]"
+            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[100ms]"
                 x-transition:enter-start="opacity-0 translate-y-12">
                 <div
-                    class="group relative bg-white border-2 border-slate-900 p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[0px_0px_0px_0px_rgba(0,0,0,0)] cursor-default">
+                    class="group relative bg-white border-2 border-slate-900 p-6 md:p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-default">
                     <div class="space-y-6">
                         <div class="flex justify-between items-start">
                             <div
-                                class="text-[10px] font-black bg-blue-600 text-white px-3 py-1 uppercase italic tracking-widest">
-                                Enterprise Resource</div>
+                                class="text-[9px] md:text-[10px] font-black bg-blue-600 text-white px-3 py-1 uppercase italic tracking-widest">
+                                Enterprise Resource
+                            </div>
                             <span
                                 class="animate-pulse h-3 w-3 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,1)]"></span>
                         </div>
                         <h4
-                            class="text-2xl font-black uppercase leading-[1.1] text-slate-900 group-hover:text-blue-600 transition-colors">
-                            Integrated Manufacturing Control System</h4>
+                            class="text-xl md:text-2xl font-black uppercase leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                            Integrated Manufacturing Control System
+                        </h4>
                         <p class="text-sm text-slate-500 leading-relaxed group-hover:text-slate-900 transition-colors">
                             Konsolidasi alur produksi manufaktur: Inbound Scrap, Forecast, Purchasing, hingga Real-time
                             Inventory Report.
@@ -54,21 +59,23 @@
                 </div>
             </div>
 
-            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[400ms]"
+            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[200ms]"
                 x-transition:enter-start="opacity-0 translate-y-12">
                 <div
-                    class="group relative bg-white border-2 border-slate-900 p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[0px_0px_0px_0px_rgba(0,0,0,0)] cursor-default">
+                    class="group relative bg-white border-2 border-slate-900 p-6 md:p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-default">
                     <div class="space-y-6">
                         <div class="flex justify-between items-start">
                             <div
                                 class="text-[10px] font-black bg-blue-600 text-white px-3 py-1 uppercase italic tracking-widest">
-                                Operational IT</div>
+                                Operational IT
+                            </div>
                             <span
                                 class="animate-pulse h-3 w-3 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,1)]"></span>
                         </div>
                         <h4
-                            class="text-2xl font-black uppercase leading-[1.1] text-slate-900 group-hover:text-blue-600 transition-colors">
-                            Fullstack IT Asset & Ticket Management</h4>
+                            class="text-xl md:text-2xl font-black uppercase leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                            Fullstack IT Asset & Ticket Management
+                        </h4>
                         <p class="text-sm text-slate-500 leading-relaxed group-hover:text-slate-900 transition-colors">
                             Implementasi sistem Ticketing Work Order, Asset Management (PR/PO), dan Digital Compliance
                             documentation.
@@ -83,21 +90,24 @@
                 </div>
             </div>
 
-            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[600ms]"
+            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[300ms]"
                 x-transition:enter-start="opacity-0 translate-y-12">
                 <div
-                    class="group relative bg-white border-2 border-slate-900 p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[0px_0px_0px_0px_rgba(0,0,0,0)] cursor-default">
+                    class="group relative bg-white border-2 border-slate-900 p-6 md:p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-default">
                     <div class="space-y-6">
                         <div class="flex justify-between items-start">
                             <div
                                 class="text-[10px] font-black bg-slate-900 text-white px-3 py-1 uppercase italic tracking-widest">
-                                Interactive UI</div>
+                                Interactive UI
+                            </div>
                         </div>
                         <h4
-                            class="text-2xl font-black uppercase leading-[1.1] text-slate-900 group-hover:text-blue-600 transition-colors">
-                            Lightweight Logistics Tracking System</h4>
+                            class="text-xl md:text-2xl font-black uppercase leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                            Lightweight Logistics Tracking System
+                        </h4>
                         <p class="text-sm text-slate-500 leading-relaxed group-hover:text-slate-900 transition-colors">
-                            Sistem manajemen Inbound/Outbound menggunakan HTMX & Alpine.js untuk performa ultra-ringan.
+                            Sistem manajemen Inbound/Outbound menggunakan HTMX & Alpine.js untuk performa ultra-ringan
+                            dan responsif.
                         </p>
                     </div>
                     <div class="pt-6 mt-6 border-t border-slate-100 flex flex-wrap gap-2">
@@ -110,22 +120,25 @@
                 </div>
             </div>
 
-            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[800ms]"
+            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[400ms]"
                 x-transition:enter-start="opacity-0 translate-y-12">
                 <div
-                    class="group relative bg-white border-2 border-slate-900 p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[0px_0px_0px_0px_rgba(0,0,0,0)] cursor-default">
+                    class="group relative bg-white border-2 border-slate-900 p-6 md:p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-default">
                     <div class="space-y-6">
                         <div class="flex justify-between items-start">
                             <div
                                 class="text-[10px] font-black bg-slate-900 text-white px-3 py-1 uppercase italic tracking-widest">
-                                Data Integrity</div>
+                                Data Integrity
+                            </div>
                         </div>
                         <h4
-                            class="text-2xl font-black uppercase leading-[1.1] text-slate-900 group-hover:text-blue-600 transition-colors">
-                            Inter-Unit Data Reconciliation System</h4>
+                            class="text-xl md:text-2xl font-black uppercase leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                            Inter-Unit Data Reconciliation System
+                        </h4>
                         <p class="text-sm text-slate-500 leading-relaxed group-hover:text-slate-900 transition-colors">
                             Automasi rekonsiliasi data transaksi antar unit bisnis untuk meminimalisir kesalahan audit
-                            manajemen.</p>
+                            manajemen.
+                        </p>
                     </div>
                     <div class="pt-6 mt-6 border-t border-slate-100 flex flex-wrap gap-2">
                         <span
@@ -136,21 +149,25 @@
                 </div>
             </div>
 
-            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[1000ms]"
+            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[500ms]"
                 x-transition:enter-start="opacity-0 translate-y-12">
                 <div
-                    class="group relative bg-white border-2 border-slate-900 p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[0px_0px_0px_0px_rgba(0,0,0,0)] cursor-default">
+                    class="group relative bg-white border-2 border-slate-900 p-6 md:p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-default">
                     <div class="space-y-6">
                         <div class="flex justify-between items-start">
                             <div
                                 class="text-[10px] font-black bg-blue-600 text-white px-3 py-1 uppercase italic tracking-widest">
-                                Network & Security</div>
+                                Network & Security
+                            </div>
                         </div>
                         <h4
-                            class="text-2xl font-black uppercase leading-[1.1] text-slate-900 group-hover:text-blue-600 transition-colors">
-                            Heavy Manufacturing Network Ecosystem</h4>
+                            class="text-xl md:text-2xl font-black uppercase leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                            Heavy Manufacturing Network Ecosystem
+                        </h4>
                         <p class="text-sm text-slate-500 leading-relaxed group-hover:text-slate-900 transition-colors">
-                            Integrasi 300+ IP Camera pada lingkungan manufaktur baja dengan medan teknis berat.</p>
+                            Integrasi 300+ IP Camera pada lingkungan manufaktur baja dengan medan teknis berat dan
+                            interferensi tinggi.
+                        </p>
                     </div>
                     <div class="pt-6 mt-6 border-t border-slate-100 flex flex-wrap gap-2">
                         <span
@@ -161,21 +178,24 @@
                 </div>
             </div>
 
-            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[1200ms]"
+            <div x-show="loaded" x-transition:enter="transition ease-out duration-500 delay-[600ms]"
                 x-transition:enter-start="opacity-0 translate-y-12">
                 <div
-                    class="group relative bg-white border-2 border-slate-900 p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[0px_0px_0px_0px_rgba(0,0,0,0)] cursor-default">
+                    class="group relative bg-white border-2 border-slate-900 p-6 md:p-8 h-full flex flex-col justify-between transition-all duration-300 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_rgba(37,99,235,1)] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] cursor-default">
                     <div class="space-y-6">
                         <div class="flex justify-between items-start">
                             <div
                                 class="text-[10px] font-black bg-slate-900 text-white px-3 py-1 uppercase italic tracking-widest">
-                                On-Premise</div>
+                                On-Premise
+                            </div>
                         </div>
                         <h4
-                            class="text-2xl font-black uppercase leading-[1.1] text-slate-900 group-hover:text-blue-600 transition-colors">
-                            Enterprise Data & Backup Server</h4>
+                            class="text-xl md:text-2xl font-black uppercase leading-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                            Enterprise Data & Backup Server
+                        </h4>
                         <p class="text-sm text-slate-500 leading-relaxed group-hover:text-slate-900 transition-colors">
-                            Implementasi redundansi data menggunakan OpenMediaVault untuk kestabilan backup internal.
+                            Implementasi redundansi data menggunakan OpenMediaVault untuk kestabilan backup internal
+                            perusahaan.
                         </p>
                     </div>
                     <div class="pt-6 mt-6 border-t border-slate-100 flex flex-wrap gap-2">
@@ -189,16 +209,17 @@
 
         </div>
 
-        <div class="bg-slate-900 p-16 border-l-[16px] border-blue-600 flex flex-col md:flex-row items-center justify-between gap-10"
-            x-show="loaded" x-transition:enter="transition ease-out duration-700 delay-[1400ms]"
+        <div class="bg-slate-900 p-8 md:p-16 border-l-8 md:border-l-[16px] border-blue-600 flex flex-col lg:flex-row items-center justify-between gap-10"
+            x-show="loaded" x-transition:enter="transition ease-out duration-700 delay-[700ms]"
             x-transition:enter-start="opacity-0 translate-y-10">
             <div class="space-y-2 text-center md:text-left">
-                <h3 class="text-4xl font-black text-white  uppercase italic">Reliability is our standard.</h3>
-                <p class="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Semua sistem di atas adalah
-                    bukti komitmen ONEASZ terhadap stabilitas infrastruktur digital.</p>
+                <h3 class="text-3xl md:text-4xl font-black text-white uppercase italic leading-tight">Reliability is our
+                    standard.</h3>
+                <p class="text-slate-400 font-bold uppercase tracking-widest text-[9px] md:text-[10px]">Semua sistem di
+                    atas adalah bukti komitmen ONEASZ terhadap stabilitas infrastruktur digital.</p>
             </div>
             <a href="{% url 'contact_page' %}"
-                class="px-12 py-5 bg-white text-slate-900 font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all duration-300">
+                class="w-full lg:w-auto text-center px-12 py-5 bg-white text-slate-900 font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all duration-300">
                 Start Consultation
             </a>
         </div>
