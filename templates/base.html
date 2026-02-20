@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEASZ - Technology Solution{% block title %}{% endblock %}</title>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            border-radius: 0 !important;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+
+        /* Animasi Sequential Motion */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 overflow-x-hidden" x-data="{ loaded: false }"
+    x-init="setTimeout(() => loaded = true, 100)">
+
+    {% include 'components/navbar.html' %}
+
+    <main id="main-content" class="pt-20">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-slate-900 text-white py-16 border-t-8 border-blue-600">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-3xl font-black italic mb-4">ONEASZ<span class="text-blue-600">.</span></h3>
+                <p class="text-slate-400">Mentransformasi kompleksitas IT menjadi keunggulan kompetitif bisnis.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-4 tracking-widest">Kontak</h4>
+                <p class="text-slate-400">Kragilan, Serang - Banten</p>
+                <p class="text-slate-400">0857-7274-7891</p>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-4 tracking-widest">Email</h4>
+                <p class="text-slate-400">ahmadsutiawan.dev@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

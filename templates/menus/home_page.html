@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="min-h-screen pt-10 pb-20 px-4 lg:px-8 bg-slate-50" x-data="{ loaded: false }"
+    x-init="setTimeout(() => loaded = true, 100)">
+    <div class="max-w-[1600px] mx-auto space-y-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            <div class="lg:col-span-8 bg-white p-12 border-2 border-slate-900 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-center space-y-6"
+                x-show="loaded" x-transition:enter="transition ease-out duration-700"
+                x-transition:enter-start="opacity-0 translate-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 text-blue-600">
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-600"></span>
+                    </span>
+                    <span class="text-xs font-black uppercase tracking-[0.3em]">Next-Generation Technology
+                        Partner</span>
+                </div>
+                <h1
+                    class="text-6xl md:text-8xl font-black italic uppercase leading-[0.9] tracking-tighter text-slate-900">
+                    Transforming <br><span class="text-blue-600">Complexity</span> <br>Into Advantage.
+                </h1>
+                <p class="max-w-2xl text-xl text-slate-500 font-medium leading-relaxed">
+                    ONEASZ hadir sebagai mitra strategis yang mengintegrasikan Custom Development, Infrastruktur Cloud,
+                    dan Reliability System untuk memastikan evolusi digital bisnis Anda berjalan presisi.
+                </p>
+                <div class="flex gap-4 pt-4">
+                    <a href="{% url 'service_page' %}"
+                        class="px-10 py-5 bg-slate-900 text-white font-black uppercase tracking-widest hover:bg-blue-600 transition-all active:scale-95 shadow-[8px_8px_0px_0px_rgba(37,99,235,0.4)]">
+                        Explore Solutions
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-4 grid grid-cols-1 gap-8" x-show="loaded"
+                x-transition:enter="transition ease-out duration-700 delay-300"
+                x-transition:enter-start="opacity-0 translate-x-8">
+                <div
+                    class="bg-blue-600 p-8 flex flex-col justify-center text-white border-2 border-slate-900 shadow-[12px_12px_0px_0px_rgba(15,23,42,1)]">
+                    <h3 class="text-5xl font-black italic mb-2">100%</h3>
+                    <p class="text-xs font-bold uppercase tracking-widest opacity-80">Technical Precision & Reliability
+                    </p>
+                </div>
+                <div
+                    class="bg-white p-8 border-2 border-slate-900 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] group hover:bg-slate-900 transition-all duration-500">
+                    <p
+                        class="text-slate-400 font-black uppercase tracking-widest text-xs mb-4 group-hover:text-blue-400">
+                        Our Core Philosophy</p>
+                    <h4
+                        class="text-2xl font-black italic uppercase leading-tight group-hover:text-white transition-colors">
+                        "Evolving with the future of your business"
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" x-show="loaded"
+            x-transition:enter="transition ease-out duration-700 delay-500"
+            x-transition:enter-start="opacity-0 translate-y-8">
+            <div class="p-8 bg-white border border-slate-200 hover:border-blue-600 transition-colors group">
+                <div
+                    class="w-16 h-16 bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h5 class="text-xl font-black uppercase mb-3">Scalable Solutions</h5>
+                <p class="text-slate-500 text-sm leading-relaxed">Menyediakan teknologi inovatif yang mampu beradaptasi
+                    dengan kecepatan pertumbuhan skala bisnis Anda.</p>
+            </div>
+            <div class="p-8 bg-white border border-slate-200 hover:border-blue-600 transition-colors group">
+                <div
+                    class="w-16 h-16 bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h5 class="text-xl font-black uppercase mb-3">Full Security</h5>
+                <p class="text-slate-500 text-sm leading-relaxed">Menjamin keamanan digital komprehensif mulai dari
+                    level kode hingga arsitektur cloud server terendah.</p>
+            </div>
+            <div class="p-8 bg-white border border-slate-200 hover:border-blue-600 transition-colors group">
+                <div
+                    class="w-16 h-16 bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h5 class="text-xl font-black uppercase mb-3">Enterprise Ready</h5>
+                <p class="text-slate-500 text-sm leading-relaxed">Dirancang untuk menangani beban operasional tinggi
+                    dengan standar reliabilitas sistem tingkat korporat.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
