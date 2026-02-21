@@ -78,7 +78,7 @@ Proyek ini dibangun untuk mendemonstrasikan kapabilitas teknologi tingkat lanjut
 
 ## 👨‍💻 Developed By
 
-**Ahmad Sutiawan** - *Full Stack Developer & Cloud Infrastructure Architect* [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmadsutiawan.dev@gmail.com)
+**Ahmad Sutiawan** - *IT Operations Lead | System Engineer* [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmadsutiawan.dev@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285772747891)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmadsutiawan/)
 
