@@ -48,34 +48,6 @@ Proyek ini dibangun untuk mendemonstrasikan kapabilitas teknologi tingkat lanjut
 
 ---
 
-## ⚙️ Panduan Instalasi Lokal
-
-1.  **Clone Repositori:**
-    ```bash
-    git clone [https://github.com/username/oneasz-project.git](https://github.com/username/oneasz-project.git)
-    cd oneasz-project
-    ```
-
-2.  **Environment Setup:**
-    ```bash
-    python -m venv env
-    source env/bin/activate  # Windows: .\env\Scripts\activate
-    pip install -r requirements.txt
-    ```
-
-3.  **WWW Redirect & Host Configuration:**
-    Pastikan `ALLOWED_HOSTS` di `settings.py` sudah mencakup domain utama dan `www`.
-    ```python
-    ALLOWED_HOSTS = ['oneasz.com', '[www.oneasz.com](https://www.oneasz.com)', '127.0.0.1']
-    ```
-
-4.  **Running Server:**
-    ```bash
-    python manage.py runserver
-    ```
-
----
-
 ## 👨‍💻 Developed By
 
 **Ahmad Sutiawan** - *IT Operations Lead | System Engineer* [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmadsutiawan.dev@gmail.com)
